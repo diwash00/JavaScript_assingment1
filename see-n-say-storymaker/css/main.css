@@ -1,0 +1,84 @@
+/* Common styles for .button-container, .button-container button, and .button-container p */
+
+/* Set the font size for the entire webpage */
+body {
+    font-size: 30px;
+}
+p{
+    margin-bottom: 60px;
+    padding: 30px 100px;
+}
+/* Styles for the button containers */
+.button-container {
+    display: inline-block;
+    margin: 10px;
+    /* Add margin around the button container */
+    text-align: center;
+    /* Center-align the content within the button container */
+}
+
+.button-container button {
+    display: block;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(10, 10, 10);
+    padding: 50px 80px;
+    cursor: pointer;
+    margin-bottom: 60px;
+    /* Transition for a smooth effect */
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.button-container button:hover {
+    background-color: #555;
+    /* Change to your desired hover color */
+}
+
+
+
+/* Styles for the buttons inside the button container */
+.button-container button {
+    display: block;
+    /* Display the buttons as blocks */
+    font-size: 1.2em;
+    /* Adjust font size for the buttons */
+    padding: 10px 20px;
+    /* Adjust padding for the buttons */
+}
+
+/* Styles for the paragraphs inside the button container */
+.button-container p {
+    margin-top: 5px;
+    /* Add top margin for the paragraphs */
+    font-size: 1em;
+    /* Adjust font size for the paragraphs */
+}
+
+/* CSS for button colors based on their position */
+.button-container:nth-child(odd) button {
+    background-color: #3ab795;
+    /* Set background color for odd-positioned buttons */
+}
+
+.button-container:nth-child(3n+1) button {
+    background-color: #a0e8af;
+    /* Set background color for buttons at positions 1, 4, 7, etc. */
+}
+
+.button-container:nth-child(3n+2) button {
+    background-color: #86baa1;
+    /* Set background color for buttons at positions 2, 5, 8, etc. */
+}
+
+.button-container:nth-child(even) button {
+    background-color: #edead0;
+    /* Set background color for even-positioned buttons */
+}
+
+.button-container:last-child button {
+    background-color: #ffcf56;
+    /* Set background color for the last button container */
+}
